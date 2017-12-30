@@ -10,10 +10,10 @@ public class Main {
 
       try{
         String password = passwordGenerator.generate(Integer.parseInt(args[0]));
-        System.err.println("A password generated : " + password);
+        System.out.println("A password generated : " + password);
       }
       catch(ArrayIndexOutOfBoundsException e){
-        System.out.println("Please enter a valid password length. For example : 8 or 16");
+        System.err.println("Please enter a valid password length. For example : 8 or 16");
       }
     }
 }
